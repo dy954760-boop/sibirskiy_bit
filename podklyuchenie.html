@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Подключиться — Сибирский Бит</title>
+    <link rel="stylesheet" href="bit.css" />
+    <style>
+        .connect-wrapper {
+            max-width: 520px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 40px 35px;
+            border-radius: 24px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .connect-wrapper h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: #0b2b4a;
+        }
+
+        .connect-wrapper .sub {
+            color: #6b7a8f;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .connect-group {
+            text-align: left;
+            margin-bottom: 18px;
+        }
+
+        .connect-group label {
+            display: block;
+            font-weight: 600;
+            color: #1e2a3a;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .connect-group input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #d0d6de;
+            border-radius: 12px;
+            font-size: 16px;
+            background: #f9fafc;
+            transition: border 0.3s;
+        }
+
+        .connect-group input:focus {
+            border-color: #f15a24;
+            outline: none;
+            background: #fff;
+        }
+
+        .connect-group input::placeholder {
+            color: #aab3c0;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-align: left;
+            margin: 18px 0 10px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #f15a24;
+            cursor: pointer;
+        }
+
+        .checkbox-group label {
+            font-size: 15px;
+            color: #2c3e50;
+            cursor: pointer;
+        }
+
+        .btn-connect {
+            width: 100%;
+            background: #f15a24;
+            color: #fff;
+            padding: 14px;
+            border-radius: 30px;
+            border: none;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 8px;
+        }
+
+        .btn-connect:hover {
+            background: #d44a1a;
+        }
+
+        .connect-hint {
+            margin-top: 18px;
+            color: #6b7a8f;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .connect-hint strong {
+            color: #0b2b4a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-wrapper">
+            <div class="logo">
+                <a href="glav.html">
+                <img src="https://provayder.net/content/img_cache/set_350x110/providers/ed50f04dd88d1cb866942515e35576ca.png" alt="Сибирский Бит" />
+                </a>
+            </div>
+            <nav>
+                <a href="dlya_doma.html">Для дома</a>
+                <a href="internet.html">Интернет</a>
+                <a href="oplata.html">Оплата</a>
+                <a href="tarify.html">Тарифы</a>
+                <a href="lk.html">Личный кабинет</a>
+            </nav>
+            <a href="podklyuchenie.html" class="btn-primary">Подключиться</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="connect-wrapper">
+            <h2>Подключиться</h2>
+            <div class="sub">Оставьте заявку, и мы подберём тариф, подключим интернет и настроим оборудование</div>
+
+            <div class="connect-group">
+                <label>Ваш номер телефона</label>
+                <input type="tel" placeholder="+7 (___) ___-__-__" />
+            </div>
+
+            <div class="connect-group">
+                <label>Адрес подключения</label>
+                <input type="text" placeholder="г. Новосибирск, ул. ..." />
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="agree" />
+                <label for="agree">Я согласен на обработку данных</label>
+            </div>
+
+            <button class="btn-connect">ЗАКАЗАТЬ ЗВОНОК</button>
+
+            <div class="connect-hint">
+                <strong>Мы перезвоним в течение 15 минут.</strong><br />
+                Подключение — бесплатно
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тарифы — Сибирский Бит</title>
+    <link rel="stylesheet" href="bit.css" />
+    <style>
+        .tarify-wrapper {
+            max-width: 1000px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 24px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .tarify-wrapper h2 {
+            font-size: 32px;
+            color: #0b2b4a;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .tarify-wrapper .sub {
+            text-align: center;
+            color: #6b7a8f;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .tarif-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 15px;
+        }
+
+        .tarif-table th {
+            background: #0b2b4a;
+            color: #fff;
+            padding: 14px 12px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .tarif-table th:first-child {
+            border-radius: 12px 0 0 0;
+        }
+
+        .tarif-table th:last-child {
+            border-radius: 0 12px 0 0;
+        }
+
+        .tarif-table td {
+            padding: 14px 12px;
+            text-align: center;
+            border-bottom: 1px solid #e4e9f0;
+            background: #f9fafc;
+        }
+
+        .tarif-table tr:last-child td {
+            border-bottom: none;
+            padding-top: 20px;
+            background: #fff;
+        }
+
+        .tarif-table .highlight {
+            background: #fff6f0;
+        }
+
+        .tarif-table .check {
+            color: #22a65e;
+            font-weight: 700;
+        }
+
+        .tarif-table .cross {
+            color: #d44a1a;
+            font-weight: 700;
+        }
+
+        .btn-tarif {
+            background: #f15a24;
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .btn-tarif:hover {
+            background: #d44a1a;
+        }
+
+        .tarif-label {
+            display: inline-block;
+            background: #f15a24;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 12px;
+            border-radius: 30px;
+            margin-left: 6px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 768px) {
+            .tarify-wrapper {
+                padding: 20px 15px;
+            }
+            .tarif-table {
+                font-size: 13px;
+            }
+            .tarif-table th,
+            .tarif-table td {
+                padding: 10px 6px;
+            }
+            .btn-tarif {
+                padding: 6px 14px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-wrapper">
+            <div class="logo">
+                <a href="glav.html">
+                <img src="https://provayder.net/content/img_cache/set_350x110/providers/ed50f04dd88d1cb866942515e35576ca.png" alt="Сибирский Бит" />
+                </a>
+            </div>
+            <nav>
+                <a href="dlya_doma.html">Для дома</a>
+                <a href="internet.html">Интернет</a>
+                <a href="oplata.html">Оплата</a>
+                <a href="tarify.html">Тарифы</a>
+                <a href="lk.html">Личный кабинет</a>
+            </nav>
+            <a href="podklyuchenie.html" class="btn-primary">Подключиться</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="tarify-wrapper">
+            <h2>Тарифы</h2>
+            <div class="sub">Выберите идеальный интернет для вашего дома</div>
+
+            <table class="tarif-table">
+                <thead>
+                    <tr>
+                        <th>Услуга</th>
+                        <th>Стартовый</th>
+                        <th>Оптимальный <span class="tarif-label">Самый популярный</span></th>
+                        <th>Премиум</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Цена</strong></td>
+                        <td>490 ₽/мес</td>
+                        <td class="highlight">690 ₽/мес</td>
+                        <td>990 ₽/мес</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Скорость</strong></td>
+                        <td>до 100 Мбит/с</td>
+                        <td class="highlight">до 300 Мбит/с</td>
+                        <td>до 500 Мбит/с</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ТВ каналы</strong></td>
+                        <td>50</td>
+                        <td class="highlight">120</td>
+                        <td>180 + кинотеатры</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Роутер</strong></td>
+                        <td><span class="cross">✘</span></td>
+                        <td class="highlight"><span class="check">✔</span> в подарок</td>
+                        <td><span class="check">✔</span> в подарок</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Видеонаблюдение</strong></td>
+                        <td><span class="cross">✘</span></td>
+                        <td class="highlight"><span class="cross">✘</span></td>
+                        <td><span class="check">✔</span> в подарок</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Подключение</strong></td>
+                        <td><span class="check">✔</span> бесплатно</td>
+                        <td class="highlight"><span class="check">✔</span> бесплатно</td>
+                        <td><span class="check">✔</span> бесплатно</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Техподдержка</strong></td>
+                        <td>24/7</td>
+                        <td class="highlight">24/7</td>
+                        <td>24/7</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="podklyuchenie.html" class="btn-tarif">Подключить</a></td>
+                        <td><a href="podklyuchenie.html" class="btn-tarif">Подключить</a></td>
+                        <td><a href="podklyuchenie.html" class="btn-tarif">Подключить</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

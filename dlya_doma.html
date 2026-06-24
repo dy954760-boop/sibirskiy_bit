@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Для дома — Сибирский Бит</title>
+    <link rel="stylesheet" href="bit.css" />
+    <style>
+        .home-hero {
+            background: #e3ecf7;
+            padding: 80px 0;
+        }
+        .home-hero .hero-wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        .home-hero .hero-text { flex: 1.2; }
+        .home-hero .hero-text h1 { font-size: 44px; }
+        .home-hero .hero-image { flex: 1; }
+        .home-hero .hero-image img {
+            width: 100%;
+            max-width: 550px;
+            border-radius: 24px;
+        }
+
+        .home-adv {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .home-adv .adv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+        .home-adv .adv-item {
+            padding: 40px 28px;
+            border-radius: 24px;
+            background: #f2f6fd;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+        }
+        .home-adv .adv-item .icon { font-size: 44px; }
+        .home-adv .adv-item h4 { font-size: 20px; }
+        .home-adv .adv-item p { font-size: 16px; }
+
+        .home-cta {
+            padding: 80px 0;
+            background: #0b2b4a;
+        }
+        .home-cta .btn-primary { font-size: 20px; padding: 16px 48px; }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="container header-wrapper">
+        <div class="logo">
+            <a href="glav.html" style="display: inline-block; text-decoration: none;">
+                <img src="https://provayder.net/content/img_cache/set_350x110/providers/ed50f04dd88d1cb866942515e35576ca.png" alt="Сибирский Бит" />
+            </a>
+        </div>
+        <nav>
+            <a href="dlya_doma.html">Для дома</a>
+            <a href="internet.html">Интернет</a>
+            <a href="oplata.html">Оплата</a>
+            <a href="tarify.html">Тарифы</a>
+            <a href="lk.html">Личный кабинет</a>
+        </nav>
+        <a href="podklyuchenie.html" class="btn-primary">Подключиться</a>
+    </div>
+</header>
+
+    <section class="home-hero">
+        <div class="container hero-wrapper">
+            <div class="hero-text">
+                <h1>🏡 Интернет для вашего дома</h1>
+                <p>Скорость, комфорт и надёжность для всей семьи. Смотрите кино, играйте и работайте без забот.</p>
+                <a href="podklyuchenie.html" class="btn-primary">Подключить дом</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3bB_0u6GqDTl2Z8X5hEXQgIpllgzVL1aIosbRM9bw-zE_N_pR90ect2o8&s=10" alt="Домашний интернет" />
+            </div>
+        </div>
+    </section>
+    <section class="home-adv">
+    <div class="container">
+        <h2 style="text-align:center;">Преимущества для дома</h2>
+        <p class="subtitle" style="text-align:center;">Всё, что нужно для комфортной жизни онлайн</p>
+        <div class="adv-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; max-width: 800px; margin: 0 auto;">
+            <div class="adv-item" style="background:#f2f6fd; padding: 30px 24px; border-radius: 20px; text-align:center;">
+                <div class="icon" style="font-size:36px;">⚡</div>
+                <h4 style="font-size:18px; margin:8px 0;">Высокая скорость</h4>
+                <p style="color:#4a5b6e; font-size:15px;">До 500 Мбит/с — для всех устройств</p>
+            </div>
+            <div class="adv-item" style="background:#f2f6fd; padding: 30px 24px; border-radius: 20px; text-align:center;">
+                <div class="icon" style="font-size:36px;">📡</div>
+                <h4 style="font-size:18px; margin:8px 0;">Стабильное подключение</h4>
+                <p style="color:#4a5b6e; font-size:15px;">Оптоволокно до дома — без обрывов</p>
+            </div>
+            <div class="adv-item" style="background:#f2f6fd; padding: 30px 24px; border-radius: 20px; text-align:center;">
+                <div class="icon" style="font-size:36px;">👨‍👩‍👧‍👦</div>
+                <h4 style="font-size:18px; margin:8px 0;">Для всей семьи</h4>
+                <p style="color:#4a5b6e; font-size:15px;">Работайте, играйте и смотрите ТВ вместе</p>
+            </div>
+            <div class="adv-item" style="background:#f2f6fd; padding: 30px 24px; border-radius: 20px; text-align:center;">
+                <div class="icon" style="font-size:36px;">🎁</div>
+                <h4 style="font-size:18px; margin:8px 0;">Бонусы при подключении</h4>
+                <p style="color:#4a5b6e; font-size:15px;">Роутер в подарок и месяц бесплатно</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="home-cta">
+        <div class="container" style="text-align:center;">
+            <h2 style="color:#fff;">Готовы подключить дом?</h2>
+            <p style="color:#cddcec; font-size:18px;">Оставьте заявку — и мы подберём идеальный тариф для вашей семьи</p>
+            <a href="podklyuchenie.html" class="btn-primary">Подключить дом</a>
+        </div>
+    </section>
+</body>
+</html>

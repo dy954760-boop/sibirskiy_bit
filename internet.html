@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интернет — Сибирский Бит</title>
+    <link rel="stylesheet" href="bit.css" />
+    <style>
+        .hero-internet {
+            background: #e3ecf7;
+            padding: 60px 0;
+        }
+        .hero-internet .hero-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .hero-internet .hero-text {
+            flex: 1;
+        }
+        .hero-internet .hero-text h1 {
+            font-size: 40px;
+            color: #0b2b4a;
+            margin-bottom: 16px;
+        }
+        .hero-internet .hero-text p {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 24px;
+        }
+        .hero-internet .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+        .hero-internet .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+        }
+        .internet-advantages {
+            padding: 60px 0;
+            background: #fff;
+        }
+        .internet-advantages .adv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
+        .internet-advantages .adv-item {
+            text-align: center;
+            background: #f9fafc;
+            padding: 30px 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+        }
+        .internet-advantages .adv-item .icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+        .internet-advantages .adv-item h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #0b2b4a;
+        }
+        .internet-advantages .adv-item p {
+            color: #4a5b6e;
+            font-size: 15px;
+        }
+        .internet-tariffs {
+            padding: 60px 0;
+            background: #f2f6fd;
+        }
+        .internet-tariffs .tariff-cards {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .internet-tariffs .card {
+            background: #fff;
+            padding: 30px 24px;
+            border-radius: 20px;
+            text-align: center;
+            flex: 1 1 250px;
+            max-width: 320px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s;
+            position: relative;
+        }
+        .internet-tariffs .card:hover {
+            transform: translateY(-6px);
+        }
+        .internet-tariffs .card.popular {
+            border: 2px solid #f15a24;
+        }
+        .internet-tariffs .badge {
+            background: #f15a24;
+            color: #fff;
+            padding: 4px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .internet-tariffs .card h3 {
+            font-size: 22px;
+            margin: 16px 0 8px;
+        }
+        .internet-tariffs .price {
+            font-size: 28px;
+            font-weight: 700;
+            color: #0b2b4a;
+            margin: 12px 0;
+        }
+        .internet-tariffs .card ul {
+            list-style: none;
+            margin: 20px 0;
+        }
+        .internet-tariffs .card ul li {
+            padding: 6px 0;
+            color: #3a4b5e;
+        }
+        .internet-cta {
+            padding: 60px 0;
+            background: #0b2b4a;
+            color: #fff;
+            text-align: center;
+        }
+        .internet-cta h2 {
+            color: #fff;
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+        .internet-cta p {
+            color: #cddcec;
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+        .internet-cta .btn-primary {
+            background: #f15a24;
+            color: #fff;
+            padding: 14px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        .internet-cta .btn-primary:hover {
+            background: #d44a1a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-wrapper">
+            <div class="logo">
+                <a href="glav.html">
+                <img src="https://provayder.net/content/img_cache/set_350x110/providers/ed50f04dd88d1cb866942515e35576ca.png" alt="Сибирский Бит" />
+                </a>
+            </div>
+            <nav>
+                <a href="dlya_doma.html">Для дома</a>
+                <a href="internet.html">Интернет</a>
+                <a href="oplata.html">Оплата</a>
+                <a href="tarify.html">Тарифы</a>
+                <a href="lk.html">Личный кабинет</a>
+            </nav>
+            <a href="podklyuchenie.html" class="btn-primary">Подключиться</a>
+        </div>
+    </header>
+    <section class="hero-internet">
+        <div class="container hero-wrapper">
+            <div class="hero-text">
+                <h1>Быстрый интернет для любых задач</h1>
+                <p>Идеально для игр, стримов, удалённой работы и учёбы. Без задержек, без лимитов, без лишних вопросов.</p>
+                <a href="podklyuchenie.html" class="btn-primary">Подключить интернет</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo3cNvCHmI4z4eTaHoVFSKHtapvQFaLNyn6QlMgco7H6icRIycdoHwcQJ7&s=10" alt="Быстрый интернет" />
+            </div>
+        </div>
+    </section>
+    <section class="internet-advantages">
+        <div class="container">
+            <h2>Почему выбирают наш интернет</h2>
+            <p class="subtitle">Надёжность и скорость для любых устройств</p>
+            <div class="adv-grid">
+                <div class="adv-item">
+                    <div class="icon">🚀</div>
+                    <h4>Высокая скорость</h4>
+                    <p>До 500 Мбит/с — работа, игры и стримы без тормозов</p>
+                </div>
+                <div class="adv-item">
+                    <div class="icon">📡</div>
+                    <h4>Оптоволокно до дома</h4>
+                    <p>Стабильный сигнал без потерь скорости</p>
+                </div>
+                <div class="adv-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Безопасное соединение</h4>
+                    <p>Защищённые каналы, никаких утечек данных</p>
+                </div>
+                <div class="adv-item">
+                    <div class="icon">🕒</div>
+                    <h4>Поддержка 24/7</h4>
+                    <p>Круглосуточная техподдержка без выходных</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="internet-tariffs">
+        <div class="container">
+            <h2>Тарифы интернета</h2>
+            <p class="subtitle">Подберите скорость под свой бюджет</p>
+            <div class="tariff-cards">
+                <div class="card">
+                    <h3>Стартовый</h3>
+                    <div class="price">490 ₽/мес</div>
+                    <ul>
+                        <li>⬤ До 100 Мбит/с</li>
+                        <li>⬤ Безлимитный трафик</li>
+                        <li>⬤ Wi-Fi роутер в аренду</li>
+                    </ul>
+                    <a href="podklyuchenie.html" class="btn-secondary">Подключить</a>
+                </div>
+                <div class="card popular">
+                    <span class="badge">Самый популярный</span>
+                    <h3>Оптимальный</h3>
+                    <div class="price">690 ₽/мес</div>
+                    <ul>
+                        <li>⬤ До 300 Мбит/с</li>
+                        <li>⬤ Безлимитный трафик</li>
+                        <li>⬤ Роутер в подарок</li>
+                    </ul>
+                    <a href="podklyuchenie.html" class="btn-primary">Подключить</a>
+                </div>
+                <div class="card">
+                    <h3>Премиум</h3>
+                    <div class="price">990 ₽/мес</div>
+                    <ul>
+                        <li>⬤ До 500 Мбит/с</li>
+                        <li>⬤ Безлимитный трафик</li>
+                        <li>⬤ Приоритетная поддержка</li>
+                    </ul>
+                    <a href="podklyuchenie.html" class="btn-secondary">Подключить</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="internet-cta">
+        <div class="container">
+            <h2>Готовы к скорости?</h2>
+            <p>Оставьте заявку и подключите быстрый интернет уже сегодня</p>
+            <a href="podklyuchenie.html" class="btn-primary">Подключить интернет</a>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оплата — Сибирский Бит</title>
+    <link rel="stylesheet" href="bit.css" />
+    <style>
+        .pay-wrapper {
+            max-width: 500px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 40px 35px;
+            border-radius: 24px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .pay-wrapper h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: #0b2b4a;
+        }
+
+        .pay-wrapper .sub {
+            color: #6b7a8f;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .pay-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .pay-group label {
+            display: block;
+            font-weight: 600;
+            color: #1e2a3a;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .pay-group input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #d0d6de;
+            border-radius: 12px;
+            font-size: 16px;
+            background: #f9fafc;
+            transition: border 0.3s;
+        }
+
+        .pay-group input:focus {
+            border-color: #f15a24;
+            outline: none;
+            background: #fff;
+        }
+
+        .pay-group input::placeholder {
+            color: #aab3c0;
+        }
+
+        .btn-pay {
+            width: 100%;
+            background: #f15a24;
+            color: #fff;
+            padding: 14px;
+            border-radius: 30px;
+            border: none;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 6px;
+        }
+
+        .btn-pay:hover {
+            background: #d44a1a;
+        }
+
+        .pay-hint {
+            margin-top: 18px;
+            color: #6b7a8f;
+            font-size: 14px;
+        }
+
+        .pay-hint a {
+            color: #1a5fb4;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .pay-hint a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-wrapper">
+            <div class="logo">
+                <a href="glav.html">
+                <img src="https://provayder.net/content/img_cache/set_350x110/providers/ed50f04dd88d1cb866942515e35576ca.png" alt="Сибирский Бит" />
+                </a>
+            </div>
+            <nav>
+                <a href="dlya_doma.html">Для дома</a>
+                <a href="internet.html">Интернет</a>
+                <a href="oplata.html">Оплата</a>
+                <a href="tarify.html">Тарифы</a>
+                <a href="lk.html">Личный кабинет</a>
+            </nav>
+            <a href="podklyuchenie.html" class="btn-primary">Подключиться</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="pay-wrapper">
+            <h2>Оплата</h2>
+            <div class="sub">Заполните данные для пополнения</div>
+            <div class="pay-group">
+                <label>Номер счета</label>
+                <input type="text" placeholder="Введите номер счета" />
+            </div>
+            <div class="pay-group">
+                <label>Сумма</label>
+                <input type="text" placeholder="Введите сумму" />
+            </div>
+            <div class="pay-group">
+                <label>Email или телефон</label>
+                <input type="text" placeholder="example@mail.ru или +7 999 999 99 99" />
+            </div>
+            <button class="btn-pay">Пополнить</button>
+            <div class="pay-hint">
+                Ещё можно пополнить в <a href="lk.html">Личном кабинете</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

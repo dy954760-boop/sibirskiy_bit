@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет — Сибирский Бит</title>
+    <link rel="stylesheet" href="bit.css" />
+    <style>
+        .lk-wrapper {
+            max-width: 600px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 24px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .lk-wrapper .greeting {
+            font-size: 28px;
+            font-weight: 700;
+            color: #0b2b4a;
+            margin-bottom: 8px;
+        }
+
+        .lk-wrapper .address {
+            color: #6b7a8f;
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+
+        .balance-block {
+            background: #f2f6fd;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .balance-block .label {
+            color: #6b7a8f;
+            font-size: 14px;
+        }
+
+        .balance-block .amount {
+            font-size: 40px;
+            font-weight: 700;
+            color: #0b2b4a;
+            margin: 4px 0;
+        }
+
+        .balance-block .date {
+            color: #6b7a8f;
+            font-size: 14px;
+        }
+
+        .btn-topup {
+            background: #f15a24;
+            color: #fff;
+            padding: 14px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-topup:hover {
+            background: #d44a1a;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 20px;
+            color: #1a5fb4;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .btn-back:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-wrapper">
+            <div class="logo">
+                <a href="glav.html">
+                <img src="https://provayder.net/content/img_cache/set_350x110/providers/ed50f04dd88d1cb866942515e35576ca.png" alt="Сибирский Бит" />
+                </a>
+            </div>
+            <nav>
+                <a href="dlya_doma.html">Для дома</a>
+                <a href="internet.html">Интернет</a>
+                <a href="oplata.html">Оплата</a>
+                <a href="tarify.html">Тарифы</a>
+                <a href="lk.html" class="active-link">Личный кабинет</a>
+            </nav>
+            <a href="podklyuchenie.html" class="btn-primary">Подключиться</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="lk-wrapper">
+            <div class="greeting">Привет, Иван</div>
+            <div class="address">Новосибирская обл, г. Новосибирск</div>
+            <div class="balance-block">
+                <div class="label">Баланс</div>
+                <div class="amount">15,87 ₽</div>
+                <div class="date">Ближайшее списание 1 июля</div>
+            </div>
+            <a href="#" class="btn-topup">Пополнить</a>
+            <br>
+            <a href="glav.html" class="btn-back">← Вернуться на главную</a>
+        </div>
+    </div>
+</body>
+</html>
